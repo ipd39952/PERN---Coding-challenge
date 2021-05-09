@@ -1,0 +1,107 @@
+$alteos-blue: rgb(6, 109, 251);
+$alteos-yellow: #ffdb5c;
+
+.blue-span {
+  color: $alteos-blue;
+}
+.custom-input {
+  width: 300px;
+  margin: 20px auto;
+  input {
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 300px;
+    border-bottom: 1px solid $alteos-blue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 30px;
+    color: black;
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $alteos-blue;
+      color: black;
+    }
+  }
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.user-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 5%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  transition: all .1s ease-in-out;
+  &:hover {
+    box-shadow: 0 1px 35px 0 rgba(0, 0, 0, 0.2);
+    background: $alteos-blue;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.card-media {
+  position: relative;
+  max-width: 300px;
+  span:hover {
+    cursor: auto;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    border-radius: 5%;
+    height: auto;
+  }
+}
+
+.card-company {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  background: $alteos-blue;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.card-content {
+  padding: 0px 10px;
+  margin-top: 10px;
+  text-align: center;
+  &:hover {
+    cursor: auto;
+  }
+  p {
+    color:#a7abb4;
+  }
+}
+
+::selection {
+  background-color: $alteos-yellow;
+  color: black;
+}
+
+
+@media(max-width: 992px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
