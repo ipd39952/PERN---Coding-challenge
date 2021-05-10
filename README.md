@@ -31,6 +31,8 @@ docker-compose up
 
 If everything runs correctly you will be able to see the app running on http://localhost:3000/
 
+![Results](frontend/src/images/result.png)
+
 ## Thoughts and takeaways:
 
 - Backend:
