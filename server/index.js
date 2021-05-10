@@ -4,12 +4,11 @@ const cors = require('cors')
 const pool = require('./database')
 const checkDatabaseAndSeed = require('./seeding')
 
-// middleware
+// Middleware
 app.use(cors())
 
-// routes
+// Routes
 app.get('/users', async (req, res) => {
-  console.log('Hi')
   try {
     const allUsers = await pool.query('SELECT * FROM data')
     res.json(allUsers.rows)
@@ -18,6 +17,7 @@ app.get('/users', async (req, res) => {
   }
 })
 
+// Extra endpoint to test the seeding file easily
 app.delete('/users', async (req, res) => {
   try {
     await pool.query('DELETE FROM data')

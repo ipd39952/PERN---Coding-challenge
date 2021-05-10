@@ -4,6 +4,7 @@ const pool = new Pool({
   user: 'alteos',
   password: '123456',
   database: 'alteos',
+  port: 5432,
 })
 
 module.exports = pool
