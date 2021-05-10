@@ -6,13 +6,13 @@ Create a simple Fullstack app using `Node.js`/`Express.js`/`PostgreSQL`/`React` 
 
 ## Running the app:
 
-- `With Docker:`
+- With Docker:
 
 ```
 docker-compose up
 ```
 
-- `Without Docker:`
+- Without Docker:
   - For the backend:
     - Make sure to edit `/server/database.js` with correct credentials/host/port for the local database
     - ```
@@ -38,7 +38,7 @@ If everything runs correctly you will be able to see the app running on http://l
   - I did expose an extra endpoint that accepts `DELETE` requests on http://localhost:3000/users so I can test my seeding logic more easily
   - That is also why I have most of the logic inside of `index.js` otherwise I would've definetly utilize seperate folders for routes and models as I've done [previously](https://github.com/ipd39952/coding-challenge)
 - Frontend:
-  - Thispart of the challenge was a really nice test of my React knowledge. I didn't run into any major issues.
+  - This part of the challenge was a really nice test of my React knowledge. I didn't run into any major issues.
 - Docker
   - As I haven't worked with Docker previously, this was definetly the most challenging part but also where I've learned the most
   - My main struggle was in regards to the database container and mainly:
@@ -46,4 +46,4 @@ If everything runs correctly you will be able to see the app running on http://l
     - Making sure the server container waits on the database container to start first before running
   * All this has really helped me understand why Docker is so widely used and just how powerful it can be if used correctly. I'm definetly interested in having an even deeper understanding of Docker
 
-## Any feedback is welcome and appriciated! 🐋
+## Any feedback is welcome and appreciated! 🐋
