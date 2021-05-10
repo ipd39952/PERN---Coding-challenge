@@ -46,4 +46,4 @@ If everything runs correctly you will be able to see the app running on http://l
     - Making sure the server container waits on the database container to start first before running
   * All this has really helped me understand why Docker is so widely used and just how powerful it can be if used correctly. I'm definetly interested in having an even deeper understanding of Docker
 
-## Any feedback is welcome and appriciated! 🐋
+## Any feedback is welcome and appreciated! 🐋
